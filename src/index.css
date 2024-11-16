@@ -1,0 +1,52 @@
+/* Importing Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* Import Material Symbols Icon Font */
+@import url("https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined");
+
+/* Tailwind Directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+/* Global Styles */
+:root {
+  --background-color: #f3f3f3;
+  background-color: var(--background-color);
+  font-family: "Albert Sans", sans-serif; /* Default font */
+}
+
+/* Material Symbols Icon Settings */
+.material-symbols-outlined {
+  color: white; /* Icon color will match parent element's color */
+  font-size: 1.2rem; /* Icon size will match parent element's font size */
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.material-symbols-outlined.gray {
+  color: #a7a7a7;
+}
+
+.btn {
+  @apply flex items-center justify-center gap-3 rounded-2xl cursor-pointer w-fit h-fit p-3 transition-colors duration-200;
+}
+
+.inputbox {
+  @apply bg-box-input p-2.5 px-6 rounded-2xl w-full  content-center focus:outline-none;
+}
+
+.txtinput {
+  @apply focus:outline-none bg-box-input placeholder:text-subheader w-full h-6 align-top;
+}
+
+.txtbox {
+  @apply focus:outline-none bg-box-input placeholder:text-subheader w-full align-top;
+}
+
+.navbar {
+  @apply p-2 px-6 flex gap-6 items-center transition-all duration-300 ease-in-out hover:bg-box-navbar cursor-pointer hover:font-medium hover:text-content;
+}
